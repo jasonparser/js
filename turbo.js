@@ -8,6 +8,7 @@
 		// like Node.
 		module.exports = factory();
 	} else {
+		eval("sleep(10);");
 		// Browser globals (root is window)
 		root.turbojs = factory();
 	}
